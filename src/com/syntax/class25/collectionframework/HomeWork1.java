@@ -29,5 +29,6 @@ public class HomeWork1 {
 
         System.out.println(names.size());
         System.out.println(names);
+        System.out.println(names);
     }
 }

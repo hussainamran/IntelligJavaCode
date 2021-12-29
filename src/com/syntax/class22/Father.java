@@ -6,6 +6,7 @@ public class Father {
         this.name=name;
     }
     void sleep(){
+        //just a system print msg
         System.out.println(name+" like you sleep 8 hours");
     }
     void eat(){

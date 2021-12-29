@@ -19,23 +19,6 @@ public class Car {
         return carPrice;
     }
 }
-class Truck extends Car {
-    double weight;
-
-    Truck(double weight, String color, double carPrice) {
-        super(carPrice, color);
-        this.weight = weight;
-    }
-
-    double calculateSalePrice() {
-        if (weight > 2000) {
-            return 10;
-        } else {
-            return 20;
-        }
-
-    }
-}
 class Sedan extends Car {
     double length;
 
@@ -46,10 +29,26 @@ class Sedan extends Car {
 
     double calculateSalePrice() {
         if (length > 20) {
-            return 5;
+            return carPrice*0.95;
         } else {
-            return 10;
+            return carPrice*.9;
         }
     }
 }
+class Truck extends Car {
+    double weight;
 
+    Truck(double weight, String color, double carPrice) {
+        super(carPrice, color);
+        this.weight = weight;
+    }
+
+    double calculateSalePrice() {
+        if (weight > 2000) {
+            return carPrice*0.9;
+        } else {
+            return carPrice*.8;
+        }
+
+    }
+}

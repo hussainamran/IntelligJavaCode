@@ -1,5 +1,7 @@
 package com.syntax.groupProject.Task1.Task5;
 
+import java.util.Locale;
+
 public class Registration {
     /*
     Create Registration Class in which you would have variables as email, userName and password that have an
@@ -61,4 +63,3 @@ public class Registration {
         }
     }
 }
-
