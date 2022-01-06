@@ -17,6 +17,7 @@ public class Task3 {
         employee.put("Shane Rod", 78000);
         employee.put("Will Smith", 97000);
         Iterator<Integer> iterator = employee.values().iterator();
+        //Integer lowestsalary=0;
         Integer highestSalary = 0;
         while (iterator.hasNext()) {
             Integer salary = iterator.next();
@@ -24,12 +25,16 @@ public class Task3 {
                 highestSalary = salary;
             }
         }
+
         Set<Map.Entry<String, Integer>> values = employee.entrySet();
         for (Map.Entry<String, Integer> entry : values) {
             if (entry.getValue() == highestSalary) {
                 System.out.println(entry.getKey() + "=$" + entry.getValue());
             }
         }
+        System.out.println("***********************************");
+        //employee.forEach((k,v)-> System.out.println("Key "+k+ " Value " +v));
+
 
     }
 }

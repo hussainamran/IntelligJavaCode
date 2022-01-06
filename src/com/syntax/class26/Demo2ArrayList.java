@@ -1,6 +1,9 @@
 package com.syntax.class26;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Demo2ArrayList {
     public static void main(String[] args) {
@@ -27,7 +30,11 @@ public class Demo2ArrayList {
         subjects2.add("AWS");
         subjects2.add("Mobile Testing");
         subjects2.add("Mock Interview");
-        subjects1.retainAll(subjects2);// will allows us remove any duplicate from two liat.
-        System.out.println(subjects1);
+        // subjects1.retainAll(subjects2);// will allows us remove any duplicate from two liat.
+        //System.out.println(subjects1);
+      subjects1.forEach((element)->{
+          System.out.println(element);
+      });
+
     }
 }

@@ -29,6 +29,8 @@ public class Task2 {
             Map.Entry<Integer,String>item=entryIterator.next();
             System.out.println(item.getKey()+" "+item.getValue());
         }
+        System.out.println("******************************");
+        BestBuyStore.forEach((k,v)-> System.out.println("Key "+k+ " Value " +v));
 
     }
 }

@@ -16,6 +16,6 @@ public class Demo3ArrayList {
                subjects1.remove(i);
            }
         }
-        System.out.println(subjects1);
+        System.out.println(subjects1.indexOf(0));
     }
 }
